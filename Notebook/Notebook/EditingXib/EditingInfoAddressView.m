@@ -136,4 +136,13 @@
     }
 }
 
+- (BOOL)tableView:(UITableView *)tableView shouldIndentWhileEditingRowAtIndexPath:(NSIndexPath *)indexPath {
+    if (indexPath.row == [self.addresses count]) {
+        return NO;
+    }
+    else {
+        return YES;
+    }
+}
+
 @end

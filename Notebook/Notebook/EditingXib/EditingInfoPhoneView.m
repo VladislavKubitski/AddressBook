@@ -150,8 +150,15 @@
         
         self.contentWasChangedBlock(([self.phones count] + 1) * 40);
     }
-    
 }
 
+- (BOOL)tableView:(UITableView *)tableView shouldIndentWhileEditingRowAtIndexPath:(NSIndexPath *)indexPath {
+    if (indexPath.row == [self.phones count]) {
+        return NO;
+    }
+    else {
+        return YES;
+    }
+}
 
 @end
