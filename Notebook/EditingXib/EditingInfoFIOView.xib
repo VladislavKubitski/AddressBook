@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="EditingInfoFIOView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="cVN-bk-Lnc">
+                    <rect key="frame" x="185" y="85.5" width="150" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="150" id="Mtw-MJ-Ogx"/>
+                        <constraint firstAttribute="height" constant="30" id="Oda-Fc-lEl"/>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="d5e-sd-XbC"/>
+                    </constraints>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="no" spellCheckingType="no" returnKeyType="next" textContentType="name"/>
+                    <connections>
+                        <action selector="actionEditingChanged:" destination="iN0-l3-epB" eventType="editingChanged" id="w9K-Jo-Edb"/>
+                        <outlet property="delegate" destination="iN0-l3-epB" id="4kB-q2-GGB"/>
+                    </connections>
+                </textField>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="d1K-Og-KlK">
+                    <rect key="frame" x="185" y="125.5" width="150" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="PU4-Fn-8nO"/>
+                        <constraint firstAttribute="width" constant="150" id="Zes-qq-saq"/>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="dYI-Zm-bLP"/>
+                    </constraints>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="done"/>
+                    <connections>
+                        <action selector="actionEditingChanged:" destination="iN0-l3-epB" eventType="editingChanged" id="4yX-Jh-34I"/>
+                        <outlet property="delegate" destination="iN0-l3-epB" id="O0N-hh-hWK"/>
+                    </connections>
+                </textField>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Surname" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kQJ-we-HG6">
+                    <rect key="frame" x="40" y="90" width="68.5" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nickname" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2vz-pA-Av4">
+                    <rect key="frame" x="40" y="130" width="77" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0yC-ro-YyY">
+                    <rect key="frame" x="40" y="50" width="45" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="fo6-42-HEQ">
+                    <rect key="frame" x="185" y="46" width="150" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="4hn-ce-lJ3"/>
+                        <constraint firstAttribute="height" constant="30" id="7lv-Pd-qv0"/>
+                        <constraint firstAttribute="width" constant="150" id="9G7-ja-BUu"/>
+                    </constraints>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="no" spellCheckingType="no" returnKeyType="next" textContentType="name"/>
+                    <connections>
+                        <action selector="actionEditingChanged:" destination="iN0-l3-epB" eventType="editingChanged" id="fkK-Zt-uPB"/>
+                        <outlet property="delegate" destination="iN0-l3-epB" id="7z8-nH-q8N"/>
+                    </connections>
+                </textField>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="2vz-pA-Av4" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="130" id="5Ky-Lh-C7m"/>
+                <constraint firstItem="0yC-ro-YyY" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="50" id="5S7-Mp-4NV"/>
+                <constraint firstItem="fo6-42-HEQ" firstAttribute="centerY" secondItem="0yC-ro-YyY" secondAttribute="centerY" id="5tc-Ma-Iaf"/>
+                <constraint firstItem="d1K-Og-KlK" firstAttribute="centerY" secondItem="2vz-pA-Av4" secondAttribute="centerY" id="BQ4-fQ-lbz"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="cVN-bk-Lnc" secondAttribute="trailing" constant="40" id="Eng-bZ-tiY"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="d1K-Og-KlK" secondAttribute="trailing" constant="40" id="IbR-5f-aQR"/>
+                <constraint firstItem="2vz-pA-Av4" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="40" id="Nt4-R6-YXq"/>
+                <constraint firstItem="kQJ-we-HG6" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="90" id="Qa4-LC-4uc"/>
+                <constraint firstItem="0yC-ro-YyY" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="40" id="fa5-UE-Onm"/>
+                <constraint firstItem="kQJ-we-HG6" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="40" id="hAf-AE-L19"/>
+                <constraint firstItem="cVN-bk-Lnc" firstAttribute="centerY" secondItem="kQJ-we-HG6" secondAttribute="centerY" id="n91-tn-Fln"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="fo6-42-HEQ" secondAttribute="trailing" constant="40" id="v0V-Vd-2KX"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="nameTextField" destination="fo6-42-HEQ" id="efd-lf-llq"/>
+                <outlet property="nicknameTextField" destination="d1K-Og-KlK" id="X2h-8k-K2Q"/>
+                <outlet property="surnameTextField" destination="cVN-bk-Lnc" id="7b5-49-u8l"/>
+            </connections>
+            <point key="canvasLocation" x="8" y="-3"/>
+        </view>
+    </objects>
+</document>

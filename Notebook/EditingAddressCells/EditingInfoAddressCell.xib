@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" restorationIdentifier="EditingInfoAddressCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="EditingInfoAddressCell" rowHeight="70" id="KGk-i7-Jjw" customClass="EditingInfoAddressCell">
+            <rect key="frame" x="0.0" y="0.0" width="331" height="70"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="331" height="69.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ePP-Su-NIy">
+                        <rect key="frame" x="16" y="38" width="42" height="20.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2FI-ru-131">
+                        <rect key="frame" x="233" y="19" width="58" height="30"/>
+                        <state key="normal" title="Add title"/>
+                        <connections>
+                            <action selector="actionSegueMap:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="sJk-kX-G8d"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WD0-aQ-WkF">
+                        <rect key="frame" x="16" y="10" width="42" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="ePP-Su-NIy" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="Chp-Z8-ITd"/>
+                    <constraint firstItem="2FI-ru-131" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="IrS-OB-KCU"/>
+                    <constraint firstItem="ePP-Su-NIy" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="38" id="L4f-w3-ovp"/>
+                    <constraint firstItem="WD0-aQ-WkF" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="b8L-e5-De8"/>
+                    <constraint firstItem="WD0-aQ-WkF" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="lUm-15-J6H"/>
+                    <constraint firstAttribute="trailing" secondItem="2FI-ru-131" secondAttribute="trailing" constant="40" id="r2u-YV-eNu"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <connections>
+                <outlet property="coutryLabel" destination="WD0-aQ-WkF" id="WjW-C5-0Tf"/>
+                <outlet property="mapButton" destination="2FI-ru-131" id="yB4-XK-oCV"/>
+                <outlet property="titleLabel" destination="ePP-Su-NIy" id="HnT-Vg-dRX"/>
+            </connections>
+            <point key="canvasLocation" x="-99.5" y="102"/>
+        </tableViewCell>
+    </objects>
+</document>
